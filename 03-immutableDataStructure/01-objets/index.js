@@ -7,12 +7,12 @@ const meal = {
 
 const mealWithCalories = {
   ...meal,
-  calories: 200
+  calories: 200,
 };
 
 console.log(mealWithCalories);
 
-// 2. In an Immutable way, increase the calories 
+// 2. In an Immutable way, increase the calories
 // by 100 and print the result to the console
 
 const mealWithIncreasedCalories = {
@@ -24,7 +24,6 @@ console.log(mealWithIncreasedCalories);
 
 // 3. In an Immutable way, remove the calories property and log the result to the console
 
-const {calories, ...mealWithOutCalories} = mealWithIncreasedCalories;
-  
+const { calories, ...mealWithOutCalories } = mealWithIncreasedCalories;
 
 console.log(mealWithOutCalories);
